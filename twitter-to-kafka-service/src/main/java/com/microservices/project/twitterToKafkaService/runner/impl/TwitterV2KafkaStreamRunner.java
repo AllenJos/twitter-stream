@@ -1,13 +1,11 @@
-package com.microservices.project.runner.impl;
+package com.microservices.project.twitterToKafkaService.runner.impl;
 
 import com.microservices.project.config.TwitterToKafkaServiceConfigData;
-import com.microservices.project.runner.StreamRunner;
+import com.microservices.project.twitterToKafkaService.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
-import twitter4j.TwitterException;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

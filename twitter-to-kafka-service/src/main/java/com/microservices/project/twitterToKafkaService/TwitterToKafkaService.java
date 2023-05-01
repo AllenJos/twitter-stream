@@ -1,16 +1,18 @@
-package com.microservices.project;
+package com.microservices.project.twitterToKafkaService;
 
 import com.microservices.project.config.TwitterToKafkaServiceConfigData;
-import com.microservices.project.runner.StreamRunner;
+import com.microservices.project.twitterToKafkaService.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.util.Arrays;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.microservices.project")
 public class TwitterToKafkaService implements CommandLineRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaService.class);
