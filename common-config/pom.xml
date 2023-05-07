@@ -5,13 +5,12 @@
         <groupId>com.microservices.project</groupId>
         <artifactId>twitter</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kafka-admin</artifactId>
+    <artifactId>common-config</artifactId>
     <packaging>jar</packaging>
 
-    <name>kafka-admin</name>
+    <name>common-config</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -41,10 +40,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -52,5 +48,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
